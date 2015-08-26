@@ -1,0 +1,38 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+    {% if url is defined and name is defined and url and name %}
+        <div id="fb-root"></div>
+        <script>
+            <!--
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            -->
+        </script>
+        {%
+            set attributes = {
+                'class' : "fb-page",
+                'data-href' : url,
+                'data-width' : (width is defined and width) ? width : 300,
+                'data-height' : (height is defined and height) ? height : 500,
+                'data-small-header' : (small is defined and small) ? "true" : "false",
+                'data-adapt-container-width' : (adapt is defined and adapt) ? "true" : "false",
+                'data-hide-cover' : (cover is defined and cover) ? "false" : "true",
+                'data-show-facepile' : (friends is defined and friends) ? "true" : "false",
+                'data-show-posts' : (posts is defined and posts) ? "true" : "false",
+            }
+        %}
+        <div{% for attr,data in attributes %}{{ " #{attr}=#{data}" }}{% endfor %}>
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="{{ url }}">
+                    <a href="{{ url }}">{{ name }}</a>
+                </blockquote>
+            </div>
+        </div>
+    {% endif %}
+{% endblock content %}

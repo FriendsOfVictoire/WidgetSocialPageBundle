@@ -1,0 +1,15 @@
+services:
+    victoire_core.widget_socialpage_content_resolver:
+        parent: victoire_widget.base_widget_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: SocialPage }
+
+    #alias to the entity
+    victoire.widget.socialpage:
+        class: Victoire\Widget\SocialPageBundle\Entity\WidgetSocialPage
+
+    #alias to the form
+    victoire.widget.form.socialpage:
+        class: Victoire\Widget\SocialPageBundle\Form\WidgetSocialPageType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_socialpage }

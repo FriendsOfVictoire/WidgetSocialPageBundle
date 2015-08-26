@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        SocialPage:
+            class: "Victoire\\Widget\\SocialPageBundle\\Entity\\WidgetSocialPage"
+            name: SocialPage
+            
+jms_translation:
+    configs:
+        victoire_socialpage_bundle:
+            dirs: ["@VictoireSocialPageBundle"]
+            output_dir: "@VictoireSocialPageBundle/Resources/translations"
