@@ -1,18 +1,25 @@
-Victoire CMS SocialPage Bundle
+Victoire DCMS SocialPage Bundle
 ============
 
-Need to add a social page like box in a victoire website ?
+##What is the purpose of this bundle
 
-First you need to have a valid Symfony2 Victoire edition.
-Then run:
+This bundles gives you access to the *Social Page Widget*.
+This widget integrates the Facebook Page Plugin to promote any Facebook Page on any Victoire's website.
 
-```
+More social networks integration will come in the future.
+
+##Set Up Victoire
+
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+##Install the bundle
+
     php composer.phar require friendsofvictoire/socialpage-widget
-```
 
-Declare the bundle in your AppKernel
+###Reminder
 
-```php
+Do not forget to add the bundle in your AppKernel !
+
     class AppKernel extends Kernel
     {
         public function registerBundles()
@@ -25,4 +32,3 @@ Declare the bundle in your AppKernel
             return $bundles;
         }
     }
-```

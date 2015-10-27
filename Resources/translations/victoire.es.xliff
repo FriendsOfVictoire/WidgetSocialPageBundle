@@ -8,47 +8,47 @@
     <body>
       <trans-unit id="1" resname="widget.socialpage.new.action.label">
         <source>widget.socialpage.new.action.label</source>
-        <target state="new">Page réseaux sociaux</target>
+        <target state="new">Página de red social</target>
       </trans-unit>
       <trans-unit id="2" resname="modal.form.widget.type.socialpage.label">
         <source>modal.form.widget.type.socialpage.label</source>
-        <target state="new">Page réseaux sociaux</target>
+        <target state="new">Página de red social</target>
       </trans-unit>
       <trans-unit id="3" resname="widget_socialpage.form.name.label">
         <source>widget_socialpage.form.name.label</source>
-        <target state="new">Nom de votre page Facebook</target>
+        <target state="new">Nombre de la página de Facebook</target>
       </trans-unit>
       <trans-unit id="3" resname="widget_socialpage.form.url.label">
         <source>widget_socialpage.form.url.label</source>
-        <target state="new">URL de votre page Facebook</target>
+        <target state="new">URL de la página de Facebook</target>
       </trans-unit>
       <trans-unit id="4" resname="widget_socialpage.form.width.label">
         <source>widget_socialpage.form.width.label</source>
-        <target state="new">Largeur en pixels (ne pas mettre l'unité)</target>
+        <target state="new">Ancho</target>
       </trans-unit>
       <trans-unit id="5" resname="widget_socialpage.form.height.label">
         <source>widget_socialpage.form.height.label</source>
-        <target state="new">Hauteur en pixels (ne pas mettre l'unité)</target>
+        <target state="new">Altura</target>
       </trans-unit>
       <trans-unit id="6" resname="widget_socialpage.form.adapt.label">
         <source>widget_socialpage.form.adapt.label</source>
-        <target state="new">Adapté au conteneur ?</target>
+        <target state="new">¿ Adaptado al contenedor ?</target>
       </trans-unit>
       <trans-unit id="7" resname="widget_socialpage.form.friends.label">
         <source>widget_socialpage.form.friends.label</source>
-        <target state="new">Afficher les amis ?</target>
+        <target state="new">¿ Mostrar amigos ?</target>
       </trans-unit>
       <trans-unit id="8" resname="widget_socialpage.form.small.label">
         <source>widget_socialpage.form.small.label</source>
-        <target state="new">Petite couverture ?</target>
+        <target state="new">¿ Pequeña cobertura ?</target>
       </trans-unit>
       <trans-unit id="9" resname="widget_socialpage.form.cover.label">
         <source>widget_socialpage.form.cover.label</source>
-        <target state="new">Afficher la couverture ?</target>
+        <target state="new">¿ Mostrar cobertura ?</target>
       </trans-unit>
       <trans-unit id="10" resname="widget_socialpage.form.posts.label">
         <source>widget_socialpage.form.posts.label</source>
-        <target state="new">Afficher les articles ?</target>
+        <target state="new">¿ Mostrar artículos ?</target>
       </trans-unit>
     </body>
   </file>

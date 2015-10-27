@@ -1,8 +1,8 @@
 {
     "name": "friendsofvictoire/socialpage-widget",
     "type": "symfony-bundle",
-    "description": "Victoire SocialPage widget",
-    "keywords": ["victoire", "SocialPage", "widget"],
+    "description": "Victoire DCMS SocialPage widget",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "SocialPage"],
     "homepage": "http://victoire.io",
     "license": "MIT",
     "author": {
