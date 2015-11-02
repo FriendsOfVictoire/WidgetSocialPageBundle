@@ -1,19 +1,19 @@
 <?php
+
 namespace Victoire\Widget\SocialPageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Bundle\WidgetBundle\Entity\Widget;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetSocialPage
+ * WidgetSocialPage.
  *
  * @ORM\Table("vic_widget_socialpage")
  * @ORM\Entity
  */
 class WidgetSocialPage extends Widget
 {
-
     /**
      * @var string
      * @VIC\ReceiverProperty("textable")
@@ -29,49 +29,49 @@ class WidgetSocialPage extends Widget
     protected $url;
 
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(name="width", type="integer", nullable=true)
      */
     protected $width;
 
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(name="height", type="integer", nullable=true)
      */
     protected $height;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="adapt", type="boolean", nullable=true)
      */
     protected $adapt;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="friends", type="boolean", nullable=true)
      */
     protected $friends;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="small", type="boolean", nullable=true)
      */
     protected $small;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="cover", type="boolean", nullable=true)
      */
     protected $cover;
 
     /**
-     * @var boolean
+     * @var bool
      *
      * @ORM\Column(name="posts", type="boolean", nullable=true)
      */
@@ -80,20 +80,20 @@ class WidgetSocialPage extends Widget
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
         return 'SocialPage #'.$this->id;
     }
 
-
     /**
-     * Set name
+     * Set name.
      *
      * @param string $name
+     *
      * @return $this
      */
     public function setName($name)
@@ -104,7 +104,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get name
+     * Get name.
      *
      * @return string
      */
@@ -114,9 +114,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set url
+     * Set url.
      *
      * @param string $url
+     *
      * @return $this
      */
     public function setUrl($url)
@@ -127,7 +128,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get url
+     * Get url.
      *
      * @return string
      */
@@ -137,9 +138,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set width
+     * Set width.
      *
      * @param string $width
+     *
      * @return $this
      */
     public function setWidth($width)
@@ -150,7 +152,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get width
+     * Get width.
      *
      * @return string
      */
@@ -160,9 +162,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set height
+     * Set height.
      *
      * @param string $height
+     *
      * @return $this
      */
     public function setHeight($height)
@@ -173,7 +176,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get height
+     * Get height.
      *
      * @return string
      */
@@ -183,9 +186,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set adapt
+     * Set adapt.
      *
      * @param string $adapt
+     *
      * @return $this
      */
     public function setAdapt($adapt)
@@ -196,7 +200,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get adapt
+     * Get adapt.
      *
      * @return string
      */
@@ -206,9 +210,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set friends
+     * Set friends.
      *
      * @param string $friends
+     *
      * @return $this
      */
     public function setFriends($friends)
@@ -219,7 +224,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get friends
+     * Get friends.
      *
      * @return string
      */
@@ -229,9 +234,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set small
+     * Set small.
      *
      * @param string $small
+     *
      * @return $this
      */
     public function setSmall($small)
@@ -242,7 +248,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get small
+     * Get small.
      *
      * @return string
      */
@@ -252,9 +258,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set cover
+     * Set cover.
      *
      * @param string $cover
+     *
      * @return $this
      */
     public function setCover($cover)
@@ -265,7 +272,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get cover
+     * Get cover.
      *
      * @return string
      */
@@ -275,9 +282,10 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Set posts
+     * Set posts.
      *
      * @param string $posts
+     *
      * @return $this
      */
     public function setPosts($posts)
@@ -288,7 +296,7 @@ class WidgetSocialPage extends Widget
     }
 
     /**
-     * Get posts
+     * Get posts.
      *
      * @return string
      */
@@ -296,5 +304,4 @@ class WidgetSocialPage extends Widget
     {
         return $this->posts;
     }
-
 }

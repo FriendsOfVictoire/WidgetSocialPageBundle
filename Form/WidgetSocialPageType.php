@@ -7,78 +7,77 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
-
 /**
- * WidgetSocialPage form type
+ * WidgetSocialPage form type.
  */
 class WidgetSocialPageType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('width', null, array(
-                'label' => 'widget_socialpage.form.width.label'
-            ))
-            ->add('height', null, array(
-                'label' => 'widget_socialpage.form.height.label'
-            ))
-            ->add('adapt', null, array(
-                'label' => 'widget_socialpage.form.adapt.label'
-            ))
-            ->add('friends', null, array(
-                'label' => 'widget_socialpage.form.friends.label'
-            ))
-            ->add('small', null, array(
-                'label' => 'widget_socialpage.form.small.label'
-            ))
-            ->add('cover', null, array(
-                'label' => 'widget_socialpage.form.cover.label'
-            ))
-            ->add('posts', null, array(
-                'label' => 'widget_socialpage.form.posts.label'
-            ))
-        ;
+            ->add('width', null, [
+                'label' => 'widget_socialpage.form.width.label',
+            ])
+            ->add('height', null, [
+                'label' => 'widget_socialpage.form.height.label',
+            ])
+            ->add('adapt', null, [
+                'label' => 'widget_socialpage.form.adapt.label',
+            ])
+            ->add('friends', null, [
+                'label' => 'widget_socialpage.form.friends.label',
+            ])
+            ->add('small', null, [
+                'label' => 'widget_socialpage.form.small.label',
+            ])
+            ->add('cover', null, [
+                'label' => 'widget_socialpage.form.cover.label',
+            ])
+            ->add('posts', null, [
+                'label' => 'widget_socialpage.form.posts.label',
+            ]);
 
         $mode = $options['mode'];
         if ($mode === Widget::MODE_STATIC) {
             $builder
-                ->add('name', null, array(
-                    'label' => 'widget_socialpage.form.name.label',
+                ->add('name', null, [
+                    'label'    => 'widget_socialpage.form.name.label',
                     'required' => true,
-                ))
-                ->add('url', null, array(
-                    'label' => 'widget_socialpage.form.url.label',
+                ])
+                ->add('url', null, [
+                    'label'    => 'widget_socialpage.form.url.label',
                     'required' => true,
-                ))
-            ;
+                ]);
         }
 
         parent::buildForm($builder, $options);
     }
 
-
     /**
-     * bind form to WidgetSocialPage entity
+     * bind form to WidgetSocialPage entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\SocialPageBundle\Entity\WidgetSocialPage',
             'widget'             => 'SocialPage',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The form name
      */
