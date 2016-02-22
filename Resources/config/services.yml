@@ -4,12 +4,10 @@ services:
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: SocialPage }
 
-    #alias to the entity
     victoire.widget.socialpage:
         class: Victoire\Widget\SocialPageBundle\Entity\WidgetSocialPage
 
-    #alias to the form
     victoire.widget.form.socialpage:
         class: Victoire\Widget\SocialPageBundle\Form\WidgetSocialPageType
         tags:
-            - { name: form.type , alias: victoire_widget_form_socialpage }
+            - { name: form.type }

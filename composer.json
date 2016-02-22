@@ -1,36 +1,32 @@
 {
-    "name"             : "friendsofvictoire/socialpage-widget",
-    "type"             : "symfony-bundle",
-    "description"      : "Victoire DCMS SocialPage widget",
-    "keywords"         : [
+    "name": "friendsofvictoire/socialpage-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire DCMS SocialPage widget",
+    "keywords": [
         "DCMS",
         "Victoire",
         "widget",
         "FriendsofVictoire",
-        "FoV",
-        "Dynamic",
-        "CMS",
         "SocialPage"
     ],
-    "homepage"         : "http://victoire.io",
-    "license"          : "MIT",
-    "author"           : {
+    "license": "MIT",
+    "author": {
         "name" : "Vincent Chapron",
         "email": "team-dev@victoire.io"
     },
-    "require"          : {
-        "php"                     : ">=5.3.3",
-        "symfony/framework-bundle": "~2.3",
-        "victoire/victoire"       : "~1.3"
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": "~2.8|~3.0",
+        "victoire/victoire": "~1.5"
     },
-    "autoload"         : {
+    "autoload": {
         "psr-0": {
             "Victoire\\Widget\\SocialPageBundle": ""
         }
     },
     "minimum-stability": "dev",
-    "target-dir"       : "Victoire/Widget/SocialPageBundle",
-    "extra"            : {
+    "target-dir": "Victoire/Widget/SocialPageBundle",
+    "extra": {
         "branch-alias": {
             "dev-master": "1.3.x-dev"
         }
