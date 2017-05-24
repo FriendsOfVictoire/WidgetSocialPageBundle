@@ -18,35 +18,35 @@
         <source>widget_socialpage.form.url.label</source>
         <target state="new">Facebook Page URL</target>
       </trans-unit>
-      <trans-unit id="3" resname="widget_socialpage.form.name.label">
+      <trans-unit id="4" resname="widget_socialpage.form.name.label">
         <source>widget_socialpage.form.name.label</source>
         <target state="new">Facebook Page name</target>
       </trans-unit>
-      <trans-unit id="4" resname="widget_socialpage.form.width.label">
+      <trans-unit id="5" resname="widget_socialpage.form.width.label">
         <source>widget_socialpage.form.width.label</source>
         <target state="new">Width</target>
       </trans-unit>
-      <trans-unit id="5" resname="widget_socialpage.form.height.label">
+      <trans-unit id="6" resname="widget_socialpage.form.height.label">
         <source>widget_socialpage.form.height.label</source>
         <target state="new">Height</target>
       </trans-unit>
-      <trans-unit id="6" resname="widget_socialpage.form.adapt.label">
+      <trans-unit id="7" resname="widget_socialpage.form.adapt.label">
         <source>widget_socialpage.form.adapt.label</source>
         <target state="new">Adapt to plugin container width</target>
       </trans-unit>
-      <trans-unit id="7" resname="widget_socialpage.form.friends.label">
+      <trans-unit id="8" resname="widget_socialpage.form.friends.label">
         <source>widget_socialpage.form.friends.label</source>
         <target state="new">Show Friend's Faces</target>
       </trans-unit>
-      <trans-unit id="8" resname="widget_socialpage.form.small.label">
+      <trans-unit id="9" resname="widget_socialpage.form.small.label">
         <source>widget_socialpage.form.small.label</source>
         <target state="new">Use Small Header</target>
       </trans-unit>
-      <trans-unit id="9" resname="widget_socialpage.form.cover.label">
+      <trans-unit id="10" resname="widget_socialpage.form.cover.label">
         <source>widget_socialpage.form.cover.label</source>
         <target state="new">Hide Cover Photo</target>
       </trans-unit>
-      <trans-unit id="10" resname="widget_socialpage.form.posts.label">
+      <trans-unit id="11" resname="widget_socialpage.form.posts.label">
         <source>widget_socialpage.form.posts.label</source>
         <target state="new">Show Page Posts</target>
       </trans-unit>
